@@ -14,10 +14,17 @@ html {
 
 /* 헤더 */
 #header {
-    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    z-index: 999;
 }
 #header h1 {
     float: left;
+    padding-top: 8px;
 }
 .nav {
     float: right;
@@ -62,6 +69,9 @@ html {
     color: #fff;
 }
 /* 섹션 아티클1 */
+#section {
+    margin-top: 67px;
+}
 #section .article1 {
     display: block;
     background: url(../img/main03.jpg) no-repeat center;
