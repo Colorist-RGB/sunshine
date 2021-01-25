@@ -3,11 +3,16 @@
 /* font-family: 'Nanum Gothic', sans-serif; */
 
 
-html {
+body {
     font-family: 'Nanum Gothic', sans-serif;
 }
-.row {
+.row_1 {
     max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+.row {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -23,14 +28,13 @@ html {
     z-index: 999;
 }
 #header h1 {
-    float: left;
-    padding-top: 8px;
+    margin-left: 25px;
 }
 .nav {
-    float: right;
-}
-.nav {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
 }
 .nav .depth1 > li {
     float: left;
@@ -47,9 +51,31 @@ html {
 .nav .depth2 {
     position: absolute;
     top: 100%;
-    left: 0%;
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150%;
+    height: 0px;
+    transition: all 0.5s;
+    overflow: hidden;
     z-index: 998;
+}
+/* .nav .depth1 > li:hover .depth2 {
+    height: 99px;
+} */
+.nav .depth1 > li:nth-child(1):hover .depth2 {
+    height: 66px;
+}
+.nav .depth1 > li:nth-child(2):hover .depth2 {
+    height: 66px;
+}
+.nav .depth1 > li:nth-child(3):hover .depth2 {
+    height: 33px;
+}
+.nav .depth1 > li:nth-child(4):hover .depth2 {
+    height: 33px;
+}
+.nav .depth1 > li:nth-child(5):hover .depth2 {
+    height: 99px;
 }
 .nav .depth2 a {
     display: block;
@@ -70,7 +96,7 @@ html {
 }
 /* 섹션 아티클1 */
 #section {
-    margin-top: 67px;
+    margin-top: 90px;
 }
 #section .article1 {
     display: block;
@@ -90,13 +116,29 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#section .article1 h1 {
+#section .article1 h2 {
     font-size: 45px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 /* 섹션 아티클2 */
+/* #section .title2 {
+    text-align: center;
+    color: #555;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+    position: relative;
+}
+#section .comment {
+    text-align: center;
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 19px;
+} */
 #section .article2 {
     line-height: 1.5;
     text-align: center;
