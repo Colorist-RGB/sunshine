@@ -6,55 +6,101 @@
     <title>sunshine</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/rwdindex.css">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
 </head>
 <body>
     <header id="header">
-        <div class="row_1 cf">
-            <h1>
-                <a href="#none"><img src="./img/logo.png" alt="sunshine"></a>
-            </h1>
-            <div class="nav">
-                <ul class="depth1 cf">
-                    <li><a href="#none">회사소개</a>
-                        <ul class="depth2">
-                            <li><a href="#none">인사말</a></li>
-                            <li><a href="#none">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">사업분야</a>
-                        <ul class="depth2">
-                            <li><a href="#none">사업소개</a></li>
-                            <li><a href="#none">사업분야</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">갤러리</a>
-                        <ul class="depth2">
-                            <li><a href="#none">갤러리</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">온라인문의</a>
-                        <ul class="depth2">
-                            <li><a href="#none">온라인문의</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">커뮤니티</a>
-                        <ul class="depth2">
-                            <li><a href="#none">공지사항</a></li>
-                            <li><a href="#none">질문과답변</a></li>
-                            <li><a href="#none">자유게시판</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <div class='rowww'>
+            <div class="roww cf">
+                <h1>
+                    <a href="#none"><img src="./img/logo.png" alt="sunshine"></a>
+                </h1>
+                <div class="open">
+                    <span class='blind'>메뉴열기/닫기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav">
+                    <ul class="depth1 cf">
+                        <li><a href="#none">회사소개</a>
+                            <ul class="depth2">
+                                <li><a href="#none">인사말</a></li>
+                                <li><a href="#none">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">사업분야</a>
+                            <ul class="depth2">
+                                <li><a href="#none">사업소개</a></li>
+                                <li><a href="#none">사업분야</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">갤러리</a>
+                            <ul class="depth2">
+                                <li><a href="#none">갤러리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">온라인문의</a>
+                            <ul class="depth2">
+                                <li><a href="#none">온라인문의</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">커뮤니티</a>
+                            <ul class="depth2">
+                                <li><a href="#none">공지사항</a></li>
+                                <li><a href="#none">질문과답변</a></li>
+                                <li><a href="#none">자유게시판</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <section id="section">
         <article class="article1">
-            <div class="row">
-                <h2>CREATIV DESIGN</h2>
-                <p>선샤인은 모바일 환경을 고려한<br>컨텐츠 최적화 홈페이지 전문회사입니다.</p>
+            <div class="slide_group">
+                <div class="slide slide1">
+                    <div class="txt">
+                        <h2>CREATIVE DESIGN-1</h2>
+                        <p>선샤인은 모바일 환경을 고려한<br>
+                        컨텐츠 최적화 홈페이지 전문회사입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="txt">
+                        <h2>CREATIVE DESIGN-2</h2>
+                        <p>선샤인은 모바일 환경을 고려한<br>
+                        컨텐츠 최적화 홈페이지 전문회사입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="txt">
+                        <h2>CREATIVE DESIGN-3</h2>
+                        <p>선샤인은 모바일 환경을 고려한<br>
+                        컨텐츠 최적화 홈페이지 전문회사입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="txt">
+                        <h2>CREATIVE DESIGN-4</h2>
+                        <p>선샤인은 모바일 환경을 고려한<br>
+                        컨텐츠 최적화 홈페이지 전문회사입니다.
+                        </p>
+                    </div>
+                </div>
             </div>
+            <button type="button" class="playstop">
+                <i class="fas fa-pause"></i>
+            </button>
         </article>
         <article class="article2">
             <div class="row">
@@ -172,6 +218,7 @@
     </footer>
     <div id="topbtn">
         <a href="#"><i class="fas fa-sort-up"></i><br><span>TOP</span></a>
-    </div>    
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
